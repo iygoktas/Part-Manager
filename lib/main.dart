@@ -6,11 +6,14 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'for_list_page/listing_database_helper.dart';
 import 'package:get/get.dart';
 
+//TODO gereksiz importlar silinsin
 void main() {
   if (Platform.isWindows || Platform.isLinux) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
     WidgetsFlutterBinding.ensureInitialized();
+
+    //TODO burada ikinic bir main neden var??
     void main() async {
       WidgetsFlutterBinding.ensureInitialized();
       final listingDbHelper = ListingDatabaseHelper();
@@ -41,6 +44,8 @@ class _MyAppState extends State<MyApp> {
           useMaterial3: false,
           primarySwatch: Colors.orange,
         ),
+        //TODO burada isimlendirilmis route'lar ile yonlendirme yap
+        //daha diger sayfalarda da statik isimlendirme yapip routing ayarlayacaksin
         home: HomePage());
   }
 }

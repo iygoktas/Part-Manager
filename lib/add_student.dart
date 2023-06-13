@@ -189,6 +189,7 @@ class _AddStudentState extends State<AddStudent> {
                         width: double.infinity,
                         child: TextFormField(
                           validator: (value) {
+                            //TODO sadece rakam girilebilmesi için kontrol ekle bir de keybooard type da numbers olsun
                             if (value == null || value.isEmpty) {
                               return "fillBoxError".tr;
                             }
@@ -225,6 +226,10 @@ class _AddStudentState extends State<AddStudent> {
                     ],
                   ),
                 ),
+
+                //TODO sinif ve sube dropdownlarla secilsin elle girildiginde hata olabilir
+                //1 tane dd siniflar 9 10 11 12 2. dd subeler a dan z ye kadar olabilir farketmez
+
                 const SizedBox(height: 15),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40),
@@ -352,6 +357,8 @@ class _AddStudentState extends State<AddStudent> {
                 const SizedBox(
                   height: 15,
                 ),
+                //TODO ekleme islemlerinden sonra bir onceki sayfaya donus yap
+                //bu sayfada bekleme kulaniciyi yaniltmasin
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40),
                   child: MouseRegion(
