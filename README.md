@@ -1,6 +1,6 @@
-# parcacii
+# Part Manager
 
-A new Flutter project.
+A program that can add new students, define a robot part on those students, check for broken/solid and save these data with the help of sqflite.
 
 ## Getting Started
 
