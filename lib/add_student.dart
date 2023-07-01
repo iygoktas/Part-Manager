@@ -405,16 +405,6 @@ class _AddStudentState extends State<AddStudent> {
                     ),
                   ),
                 ),
-                /* ElevatedButton(
-                    onPressed: () {
-                      Ogrenci yeniOgrenci = Ogrenci(
-                          ad: adCont.text,
-                          soyad: soyadCont.text,
-                          numara: int.parse(numaraCont.text),
-                          sinif: int.parse(sinifCont.text),
-                          sube: subeCont.text);
-                    },
-                    child: const Text("Ekle")) */
               ],
             ),
           ),
